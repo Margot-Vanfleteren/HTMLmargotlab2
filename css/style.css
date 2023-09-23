@@ -1,0 +1,216 @@
+/* Question 1 : Define block-level display for HTML5 new elements */
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+/* Style the body element */
+body {
+  color: #5e411f; /* Question 2)a Changing the text color */
+  /* Question 2)b changing the background  */
+  background-image: url('../assets/images/dark-wood3.jpg'); /*  background image */
+  font-family: Arial, Helvetica, sans-serif; /* Question 2)c change font */
+  /* question 2)d */ margin: 0; /* Margin 0 for all sides */
+}
+
+/* Style the .container div */
+.container {
+  /* Question 3)a */ width: 950px; /* Set the width of the container */
+  /*Question 3)b and 3)c */margin: 5px auto; /* 5px margin from top and bottom, centered horizontally */
+  /*Question 3) d */ background-color: #dcb469; /* applying a bg color */
+
+}
+
+.content {
+    /* question 4)a */ line-height: 1.4em; /* Set the line height to 1.4 times the font size */
+    /*question 4)b */ padding: 10px; /* Add 10px padding to all sides */
+}
+
+/* Style header, nav, and footer elements */
+header, nav, footer {
+  /*question 5)a */ background-color: #d98d4f; /*  background color */
+  /* question 5)b */color: #32250f; /*  font color */
+}
+
+/* Style ul element inside a nav element */
+nav ul {
+  /* question 6)a */ margin: 0; /* 0 margin from all sides */
+  /* question 6)b */ padding: 5px; /* 5px padding from all sides */
+}
+
+/* Style list items inside the main navigation */
+nav li {
+  /*question 7)a */ display: inline-block; /* Display list items horizontally */
+  /* question 7)b */ margin-right: 40px; /* Add 40px margin to the right of each list item */
+  /* question 7)c */ text-transform: uppercase; /* Display navigation items in uppercase */
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style anchor tags within the main navigation list items */
+nav li a {
+  display: inline-block; /* Display links horizontally */
+  margin-right: 40px; /* Add 40px margin to the right of each link */
+  text-transform: uppercase; /* Display link text in uppercase */
+  color: #452f1f; /* Default link color (normal) */
+  text-decoration: none; /* Remove underline by default */
+}
+
+/* Link in its normal state */
+nav li a:link {
+  /* question 8)a */ color: #333; /* Change the color for normal (unvisited) links */
+}
+
+/* Visited link */
+nav li a:visited {
+  /*question 8)b*/ color: #413217; /* Change the color for visited links */
+}
+
+/* Hovered link */
+nav li a:hover {
+  /* question 8)c */ color: #4d1c44; /* Change the color on hover */
+}
+
+/* Active link (when clicked) */
+nav li a:active {
+  /* question 8)d*/ color: #603c65; /* Change the color when the link is active (clicked) */
+}
+
+/* Style anchor elements */
+a {
+  /* question 9)a*/ color: #FF5733; /* Choose text color */
+  /* question 9)b */ text-decoration: none; /* Remove underline */
+}
+
+
+/* Style headings h1, h2, and h3 */
+h1, h2, h3 {
+  /* question 10)a) */margin: 10px; /* 10px margin for all sides */
+  /* question 10)b) */text-transform: uppercase; /* Display text in uppercase */
+}
+
+/*question 10)c*/
+/* Style h1 */
+h1 {
+  color: #dfa747; /*  color */
+}
+
+/* Style h2 */
+h2 {
+  color: #ef8a2c; /*  color */
+}
+
+/* Style h3 */
+h3 {
+  color: #e3e162; /* color */
+}
+
+
+/* Style elements with class "img-centre" */
+.img-centre {
+  /*question 11)a */ display: block; /* Make the image a block-level element to work with margins */
+  /*question 11)b */ margin: 5px 0; /* 5px margin from the top and bottom, 0 margin from the left and right */
+ /*question 11)c */ padding: 2px; /* 2px padding to all sides */
+  text-align: center; /* Center the image horizontally */
+  
+}
+
+
+/* Style audio and video elements */
+audio, video {
+  /* question 12)a */display: block; /* Make the audio and video elements block-level to work with margins */
+  /*question 12)b */ margin: 10px auto; /* 10px margin from the top and bottom, centered horizontally */
+}
+
+/* Style table element */
+table {
+  /* question 13)a */ width: 800px; /* Set the width to 800px */
+  /* question 13)b */margin: 10px auto; /* Center the table horizontally with 10px margin from top and bottom */
+  /*question 13)c */border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Style <td> and <th> elements in any table */
+td, th {
+  /* question 14)a */ border: 2px solid #333; /* Add a border  */
+  /* question 14)b */ padding: 2px 5px; /* 2px padding from the top and bottom, 5px padding from the left and right */
+  /* question 14)c */background-color: #dddd6d; /* Add background color ) */
+}
+
+/* question 15*/ 
+/* Style <th> elements inside any table */
+table th {
+  text-transform: uppercase; /* Uppercase letters */
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+/* Style <td> elements inside the <tfoot> */
+tfoot td {
+  text-transform: uppercase; /* Uppercase letters */
+  background-color: #f2f2f2; /* Light background color */
+  color: #333; /* Dark text color */
+}
+
+/* question 16*/  
+/* Style <dt> elements to make them bold */
+dt {
+  font-weight: bold;
+}
+
+/* Style <footer> elements */
+footer {
+  /* question 17)a */ font-size: 80%; /* Change font size to 80% of the default font size  */
+ /*question 17)b */ text-align: center; /* Align text to the center */
+  /* question 17)c */ padding: 1px 0; /* 1px padding from the top and bottom, 0 padding from the right and left */
+}
+
+/* Style <iframe> elements */
+iframe {
+  /*question 18)b) */ display: block; /* Make the <iframe> a block-level element */
+  /* question 18)a) */ margin: 10px auto; /* 10px margin from the top and bottom, centered horizontally */
+}
+
+
+/* Style <fieldset> elements */
+fieldset {
+  /* question 19)a */width: 500px; /* Set width to 500px */
+  /* question 19)b */margin: 20px auto; /* 20px margin from the top and bottom, centered horizontally */
+  /*question 19)c */border: 2px dashed #333; /* Add a dashed border  */
+  /*question 19)d */background-color: #bb8e4c; /* Add  background color  */
+}
+
+
+/* Style <legend> elements */
+legend {
+  /* question 20)a */ font-style: italic; /* Italic font style */
+   /* question 20)b */color: #fff; /* Text color  */
+   /* question 20)b */background-color: #333; /* Background color  */
+   /* question 20)c */margin: 0 10px; /* 0 margin from the top and bottom, 10px margin from the left and right */
+   /* question 20)d */padding: 0 5px; /* 0 padding from top and bottom, 5px padding from the left and right */
+   /* question 20)e */border-radius: 10px; /* Rounded border with a size of 10px */
+   /* question 20)e */border: 2px solid #333; /* Border with a color matching the background color */
+}
+
+/* Style <input> element with type="submit" */
+input[type="submit"] {
+  /* question 21)a border style and color */
+  border: 2px solid #333;
+  /* question 21)b Add 5px padding to all sides */
+  padding: 5px;
+  /* question 21)c background color */
+  background-color: #895e39;
+  /* question 21)d text color */
+  color: #333;
+}
+
+/* Style <input> element with type="submit" for the hover state */
+input[type="submit"]:hover {
+  /* question 22) a Change text color and background color on hover */
+  color: #fff; /* Text color (white in this example) */
+  background-color: #333; /* Background color */
+  /* question 22)b Change mouse pointer to a hand icon */
+  cursor: pointer;
+}
+
+
